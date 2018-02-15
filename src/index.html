@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="grid-container">
+  <div class="grid-frame grid-y grid-margin-x align-center">
+    <div class="cell shrink text-center">
+      <img class="logo" src="{{ 'assets/img/logo.svg' | relative_url }}" alt="Osteria Bar and Kitchen" />
+      <h4 class="subtitle">Coming Soon | Franklin TPA</h4>
+      <button class="button primary reveal-btn" data-open="reveal-sign-up">Sign Up</button>
+    </div>
+  </div>
+</div>
+
+<div
+  class="reveal"
+  id="reveal-sign-up"
+  data-reveal
+  data-animation-in="fade-in fast"
+  data-animation-out="fade-out fast">
+  <div class="grid-x">
+    <div class="cell small-12 medium-6 reveal-bg">
+      <!-- Nothing here -->
+    </div>
+    <div class="cell small-12 medium-6 reveal-content">
+      <form class="signup-form">
+        <fieldset>
+          <img class="signup-form-logo" src="{{ 'assets/img/logo.svg' | relative_url }}" alt="Osteria Bar and Kitchen" />
+          <h3 class="signup-form-title">Sign Up for the Osteria Newsletter</h3>
+          <input type="text" placeholder="Enter Your Name" />
+          <input type="text" placeholder="Enter Your Email"  />
+        </fieldset>
+        <div class="submit-wrap">
+          <button class="button secondary" type="submit">Submit</button>
+          <span class="mumbles">
+            If not it's cool, no worries...
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+  <button class="close-button" data-close aria-label="Close modal" type="button"></button>
+</div>

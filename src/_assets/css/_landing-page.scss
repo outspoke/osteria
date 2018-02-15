@@ -1,0 +1,119 @@
+body {
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+input[type=text],
+input[type=text]:focus,
+input[type=email],
+input[type=email]:focus {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: rem-calc(365);
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+}
+
+.reveal-btn {
+  text-decoration: underline;
+}
+
+.reveal-bg {
+  background: url(../img/reveal-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding-bottom: 60%;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 70%;
+    background: linear-gradient(to left, rgba($black, 0.75), rgba($black, 0) 100%);
+  }
+
+  @include breakpoint(medium) {
+    padding-bottom: 0;
+  }
+}
+
+.signup-form {
+  fieldset {
+    padding: 2rem;
+  }
+
+  .signup-form-logo {
+    max-width: rem-calc(100);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .signup-form-title {
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    margin: 0;
+    margin-right: 0.5rem;
+  }
+
+  .mumbles {
+    color: $secondary-color;
+    font-size: 70%;
+  }
+
+  .submit-wrap {
+    padding: 2rem;
+    padding-top: 0;
+  }
+
+  @include breakpoint(medium) {
+    .submit-wrap {
+      padding: 0;
+    }
+  }
+}
+
+.close-button {
+  width: rem-calc(30);
+  height: rem-calc(30);
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    border-bottom: rem-calc(1) solid $white;
+    left: 50%;
+    top: 50%;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+// Bump up the size of everything on 4k monitors
+@include breakpoint(2000px) {
+  html {
+    font-size: 200%;
+  }
+}
