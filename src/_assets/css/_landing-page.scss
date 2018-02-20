@@ -12,7 +12,9 @@ html.is-reveal-open {
 input[type=text],
 input[type=text]:focus,
 input[type=email],
-input[type=email]:focus {
+input[type=email]:focus,
+input[type=tel],
+input[type=tel]:focus {
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -31,6 +33,7 @@ input[type=email]:focus {
 
 .reveal-btn {
   text-decoration: underline;
+  margin: rem-calc(0 5);
 }
 
 .reveal-bg {
