@@ -20,9 +20,13 @@ layout: compress
     {% endif %}
   </head>
   <body class="{% include body-class.html %}">
-
-    {{ content }}
-
+    <div class="grid-container">
+      <div class="grid-frame grid-y grid-margin-x align-center">
+        <div class="cell shrink text-center">
+          {{ content }}
+        </div>
+      </div>
+    </div>
     <script src="{{ 'assets/app.js' | relative_url }}"></script>
   </body>
 </html>

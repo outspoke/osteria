@@ -125,6 +125,10 @@ input[type=tel]:focus {
   }
 }
 
+.success-message {
+  font-size: 1.25rem;
+}
+
 // Bump up the size of everything on 4k monitors
 @include breakpoint(2000px) {
   html {
