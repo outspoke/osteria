@@ -20,6 +20,10 @@ input[type=tel]:focus {
   border-right: 0;
 }
 
+a:not(.button) {
+  text-decoration: underline;
+}
+
 .logo {
   display: block;
   margin: 0 auto;
