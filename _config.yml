@@ -17,8 +17,8 @@ title: Osteria
 email: jay@outspoke.co
 description: > # this means to ignore newlines until "baseurl:"
   Bar + Kitchen
-baseurl: "/osteria" # the subpath of your site, e.g. /blog
-url: "https://outspoke.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://osteriatampa.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 
 # Build settings
