@@ -33,6 +33,12 @@ a:not(.button) {
 
 .subtitle {
   margin-bottom: 2rem;
+
+  small {
+    color: inherit;
+    display: block;
+    padding-top: 1em;
+  }
 }
 
 @include breakpoint(medium) {
