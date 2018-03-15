@@ -5,6 +5,13 @@
   "author": "Jay Nielsen <jay@jayarnielsen.com>",
   "homepage": "https://jayarnielsen.github.io/amethyst/",
   "license": "MIT",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "android 4",
+    "opera 12",
+    "iOS >= 8"
+  ],
   "scripts": {
     "serve": "bundle exec jekyll serve --drafts --incremental",
     "watch": "webpack --hide-modules --watch --config webpack.config.js",
